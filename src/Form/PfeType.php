@@ -17,7 +17,7 @@ class PfeType extends AbstractType
             ->add('etudiant')
             ->add('entreprise')
             ->add('Submit',SubmitType::class) ;
-        ;
+
     }
 
     public function configureOptions(OptionsResolver $resolver): void

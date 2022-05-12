@@ -22,7 +22,6 @@ class Pfe
     #[ORM\ManyToOne(targetEntity: Entreprise::class, inversedBy: 'pves')]
     #[ORM\JoinColumn(nullable: false)]
     private $entreprise;
-
     public function getId(): ?int
     {
         return $this->id;

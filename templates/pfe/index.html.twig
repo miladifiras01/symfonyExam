@@ -1,17 +1,23 @@
-{% extends 'base.html.twig' %}
-
-{% block title %}Hello PfeController!{% endblock %}
-
-{% block body %}
-    <h1>Register</h1>
-
-    {{ form_start(registrationForm) }}
-    {{ form_row(registrationForm.email) }}
-    {{ form_row(registrationForm.plainPassword, {
-        label: 'Password'
-    }) }}
-    {{ form_row(registrationForm.agreeTerms) }}
-
-    <button type="submit" class="btn">Register</button>
-    {{ form_end(registrationForm) }}
-{% endblock %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>add pfe</title>
+    <link rel="stylesheet" href="{{asset("node_modules/bootstrap/dist/css/bootstrap.css")}}">
+</head>
+<body>
+<h1 class="h1">Add a pfe</h1>
+<div class="container">
+<div class="row">
+    {{ form_start(form) }}
+    <div class="col"> {{ form_row(form.titre) }}</div>
+    <div class="col"> {{ form_row(form.etudiant) }}</div>
+    <div class="col">{{form_row(form.entreprise)}}</div>
+    {{ form_end(form) }}
+</div>
+</div>
+</body>
+</html>
